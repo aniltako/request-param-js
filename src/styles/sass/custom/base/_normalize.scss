@@ -1,0 +1,122 @@
+body {
+  font-family: $font-open-sans;
+  font-weight: $font-normal;
+  font-size: $font-size-base;
+  color: $color-base;
+  background: #F9FCFC;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: $font-semi-bold;
+}
+
+h1 {
+  font-size: $font-size-h1;
+}
+h2 {
+  font-size: $font-size-h2;
+}
+h3 {
+  font-size: $font-size-h3;
+}
+h4 {
+  font-size: $font-size-h4;
+}
+h5 {
+  font-size: $font-size-h5;
+}
+h6 {
+  font-size: $font-size-h6;
+}
+
+svg:not(:root) {
+  overflow: unset;
+}
+
+ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+input {
+  @include placeholder($color-light);
+}
+button,
+textarea,
+input {
+  &:focus {
+    outline: none !important;
+    box-shadow: none !important;
+    -webkit-box-shadow: none !important;
+  }
+}
+
+#root {
+  min-height: 100vh;
+}
+.clearfix {
+  &:before,
+  &:after {
+    display: table;
+    content: '';
+  }
+  &:after {
+    clear: both;
+  }
+}
+.v-align {
+  top: 50%;
+  @include translate(0, -50%);
+}
+.c-align {
+  left: 50%;
+  @include translate(-50%, 0);
+}
+.v-c-align {
+  top: 50%;
+  left: 50%;
+  @include translate(-50%, -50%);
+}
+.overflow-hidden {
+  overflow: hidden;
+}
+.error {
+  font-size: $font-size-sm;
+  color: $color-red;
+  text-align: left;
+}
+.filter-blur {
+  filter: none; 
+  -webkit-filter: blur(0); 
+  -moz-filter: blur(0); 
+  -ms-filter: blur(0);
+  filter:progid:DXImageTransform.Microsoft.Blur(PixelRadius='0');
+}
+.text-ellipsis {
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+.disabled {
+  pointer-events: none;
+  color: $color-light;
+  opacity: 0.7;
+}
+select[disabled], select:disabled {
+  opacity: 0.65;
+  cursor: not-allowed;
+}
+select:invalid {
+  color: $color-light;
+}
+.display-flex {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: start;
+  align-items: flex-start;
+}

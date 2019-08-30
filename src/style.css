@@ -1,0 +1,27 @@
+body{
+    color:#000000;
+    margin-left:0;
+    margin-right:0;
+    margin-top:0;
+    margin-bottom:0;
+
+}
+
+main[role="main-content"] {
+    padding-left: 30px;
+    padding-right: 30px;
+    min-height: calc(100vh);
+    position: relative;
+}
+
+section[role="content-section"] {
+	display: flex;
+    justify-content: center;
+    height: 100px;
+    align-items: center;
+}
+
+.title {
+    font-size: 32px;
+    font-weight: 800;
+}

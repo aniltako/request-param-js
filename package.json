@@ -5,7 +5,7 @@
   "main": "build/index.js",
   "repository": {
     "type": "git",
-    "url": "https://github.com/aniltako/create-npm-package-js.git"
+    "url": "https://github.com/aniltako/request-param-js.git"
   },
   "scripts": {
     "build-custom": "node-sass-chokidar --include-path ./node_modules src/styles/sass/custom -o src/styles/css/custom --output-style compressed",

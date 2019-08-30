@@ -1,6 +1,6 @@
 {
   "name": "request-param-js",
-  "version": "0.0.0-semantically-released",
+  "version": "0.0.0-development",
   "description": "request-param-js",
   "main": "build/index.js",
   "repository": {
@@ -31,7 +31,8 @@
   "dependencies": {
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
-    "react-router-dom": "^5.0.1"
+    "react-router-dom": "^5.0.1",
+    "user": "0.0.0"
   },
   "devDependencies": {
     "@babel/core": "^7.5.5",

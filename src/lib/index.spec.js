@@ -19,4 +19,13 @@ describe("Request Params", () => {
         }
         expect(getRequestParams(requestParam)).toBe("searchText=john&size=10&");
     })
+
+    test("Request params with  page = undefined .", () => {
+        const requestParam = {
+            searchText: 'john',
+            page: undefined,
+            size: 10,
+        }
+        expect(getRequestParams(requestParam)).toBe("searchText=john&size=10&");
+    })
 })

@@ -1,6 +1,6 @@
 
 const webpack = require('webpack');
-const config = require('./webpack.config.js.js');
+const config = require('./webpack.config');
 const merge = require('webpack-merge');
 var HtmlWebpackPlugin =  require('html-webpack-plugin');
 

@@ -1,9 +1,28 @@
 pipeline {
     agent { docker { image 'node:8' } }
     stages {
-        stage('build') {
+        stage('Install') {
             steps {
-                sh 'npm --version'
+                sh 'npm install'
+            }
+        }
+        stage('Test') {
+            steps {
+                sh 'npm run test'
+            }
+        }
+        stage('Build') {
+            steps {
+                sh 'npm run build'
+            }
+        }
+        stage('Publish') { 
+            agent any
+            when{
+                branch 'master'
+            }
+            steps {
+                sh 'npm run semantic-release'
             }
         }
     }
